@@ -1,0 +1,29 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phishing URL Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <p class="quote"><span class="quote-icon">“</span>Think before you click – Stay safe online.<span class="quote-icon">”</span></p>
+    <h1>Phishing URL Detector</h1>
+    <form method="POST" action="/">
+      <input type="text" name="url" placeholder="Enter URL here" required />
+      <button type="submit">Check URL</button>
+    </form>
+    {% if prediction %}
+    <div class="prediction">
+      Result: {{ prediction }}<br />
+      URL: {{ url }}
+    </div>
+    {% endif %}
+  </div>
+  <footer class="footer">“Empowering safer clicks, one URL at a time.”</footer>
+</body>
+</html>
+

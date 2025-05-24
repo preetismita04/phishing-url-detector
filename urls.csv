@@ -1,0 +1,5 @@
+url,label
+http://malicious-site.com,1
+https://securebank.com,0
+http://192.168.0.1/login,1
+https://github.com,0

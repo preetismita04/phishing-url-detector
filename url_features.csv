@@ -1,0 +1,5 @@
+url,url_length,num_dots,has_at_symbol,has_hyphen,is_https,num_subdomains,num_digits,has_ip_address,label
+http://malicious-site.com,25,1,0,1,0,0,0,0,1
+https://securebank.com,22,1,0,0,1,0,0,0,0
+http://192.168.0.1/login,24,3,0,0,0,2,8,1,1
+https://github.com,18,1,0,0,1,0,0,0,0
